@@ -1,0 +1,74 @@
+﻿@model Prueba_Tecnica.Models.EmpleadoViewModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>EmpleadoViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdEmployee)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdEmployee)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.identification)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.identification)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateBirth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateBirth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AdmissionDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AdmissionDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdBoss)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdBoss)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdArea)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdArea)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Photo)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
